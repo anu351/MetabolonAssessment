@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetabolonCodingAssessment", "MetabolonCodingAssessment.csproj", "{90EE246D-D215-4CA7-859E-B95B7E6EE325}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestMetabolon", "..\UnitTestMetabolon\UnitTestMetabolon.csproj", "{0AAA2613-E982-4CE9-BBAA-1D8D4ECB5D19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetabolonCodingAssessmentTests", "..\MetabolonCodingAssessmentTests\MetabolonCodingAssessmentTests.csproj", "{3BD98A78-5E06-421C-995F-1A1087046C54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{90EE246D-D215-4CA7-859E-B95B7E6EE325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90EE246D-D215-4CA7-859E-B95B7E6EE325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90EE246D-D215-4CA7-859E-B95B7E6EE325}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0AAA2613-E982-4CE9-BBAA-1D8D4ECB5D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0AAA2613-E982-4CE9-BBAA-1D8D4ECB5D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0AAA2613-E982-4CE9-BBAA-1D8D4ECB5D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0AAA2613-E982-4CE9-BBAA-1D8D4ECB5D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BD98A78-5E06-421C-995F-1A1087046C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD98A78-5E06-421C-995F-1A1087046C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD98A78-5E06-421C-995F-1A1087046C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD98A78-5E06-421C-995F-1A1087046C54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

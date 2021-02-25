@@ -16,7 +16,7 @@ namespace MetabolonCodingAssessment
             };
 
             RSSFeed rssFeed = new RSSFeed();
-            rssFeed.ReadRSSFeed("http://rss.cnn.com/rss/cnn_topstories.rss");
+            rssFeed.ReadRSSFeed("https://rss.acast.com/unraveled");
         }
     }
 }
