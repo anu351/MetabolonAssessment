@@ -1,0 +1,15 @@
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\bin\Debug\netcoreapp3.1\MetabolonCodingAssessment.exe
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\bin\Debug\netcoreapp3.1\MetabolonCodingAssessment.deps.json
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\bin\Debug\netcoreapp3.1\MetabolonCodingAssessment.runtimeconfig.json
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\bin\Debug\netcoreapp3.1\MetabolonCodingAssessment.runtimeconfig.dev.json
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\bin\Debug\netcoreapp3.1\MetabolonCodingAssessment.dll
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\bin\Debug\netcoreapp3.1\MetabolonCodingAssessment.pdb
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\bin\Debug\netcoreapp3.1\System.ServiceModel.Syndication.dll
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\obj\Debug\netcoreapp3.1\MetabolonCodingAssessment.csprojAssemblyReference.cache
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\obj\Debug\netcoreapp3.1\MetabolonCodingAssessment.AssemblyInfoInputs.cache
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\obj\Debug\netcoreapp3.1\MetabolonCodingAssessment.AssemblyInfo.cs
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\obj\Debug\netcoreapp3.1\MetabolonCodingAssessment.csproj.CoreCompileInputs.cache
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\obj\Debug\netcoreapp3.1\MetabolonCodingAssessment.csproj.CopyComplete
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\obj\Debug\netcoreapp3.1\MetabolonCodingAssessment.dll
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\obj\Debug\netcoreapp3.1\MetabolonCodingAssessment.pdb
+C:\Users\Anusha\source\repos\GitHub\MetabolonAssessment\MetabolonCodingAssessment\obj\Debug\netcoreapp3.1\MetabolonCodingAssessment.genruntimeconfig.cache

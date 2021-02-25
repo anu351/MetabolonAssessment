@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mHwq/1VNQcdLZitEWjgIKk8jA8N9ALvvZo9fk+HL/LnYN5FmkX5AVsQX2Zl2KVOxXdydyNjiXUaYtOejD+IK9Q==",
+  "dgSpecHash": "16TyaEqHo9w+zkGhG6TS4+9tzk12aU2o0YiPrZzGOYYkXI4zHu+4Vvhu7QWWPoh9dBYvSN/T5eS7hqs9iUNRJw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anusha\\source\\repos\\GitHub\\MetabolonAssessment\\MetabolonCodingAssessment\\MetabolonCodingAssessment.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Anusha\\.nuget\\packages\\system.servicemodel.syndication\\5.0.0\\system.servicemodel.syndication.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
