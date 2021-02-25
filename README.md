@@ -10,7 +10,9 @@ Assumptions:
 
 
 Program.cs can be used to test functionality.
+
 **INPUT Dictionary:**
+
 var companyDict = new Dictionary<string, IEnumerable<string>>
             {
                 { "Unrivaled: Long Island Serial Killer", new List<string>{"https://rss.acast.com/unraveled" } },
@@ -23,6 +25,7 @@ var companyDict = new Dictionary<string, IEnumerable<string>>
             
   
  **** Results in Following output:****
+ 
   Companies that have no activity in the past 2 Days:
 
   Morbid: A True Crime Podcast
