@@ -24,7 +24,7 @@ var companyDict = new Dictionary<string, IEnumerable<string>>
             };
             
   
- **** Results in Following output:****
+**Results in Following output:**
  
   Companies that have no activity in the past 2 Days:
 
