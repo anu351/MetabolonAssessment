@@ -40,5 +40,28 @@ namespace Tests
             Assert.AreEqual(testAct, expectedResult);
 
         }
+
+        [TestMethod()]
+        public void ActivityTrackerRSSTest()
+        {
+            List<string> actualList = new List<string>();
+            List<string> expectedList = new List<string>();
+
+            expectedList.Add("Morbid: A True Crime Podcast");
+            expectedList.Add("Crime Junkie");
+
+            var companyDict = new Dictionary<string, string>
+            {
+                { "Unrivaled: Long Island Serial Killer", "https://rss.acast.com/unraveled" },
+                {"Morbid: A True Crime Podcast", "https://audioboom.com/channels/4997220.rss"},
+                {"CNN", "http://rss.cnn.com/rss/cnn_topstories.rss" },
+                {"Crime Junkie", "https://feeds.megaphone.fm/ADL9840290619" }
+            };
+
+            actualList = rssFeed.ActivityTrackerRSS(companyDict, 2);
+
+            CollectionAssert.AreEqual(expectedList, actualList);
+            
+        }
     }
 }
