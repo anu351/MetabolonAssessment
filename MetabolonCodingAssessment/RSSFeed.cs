@@ -26,8 +26,8 @@ public class RSSFeed
         SyndicationFeed currentFeed = SyndicationFeed.Load(currentXML);
         currentXML.Close();
 
-        var post = currentFeed.Items.OrderByDescending(x => x.PublishDate).FirstOrDefault();
-        DateTime pubDate = post.PublishDate.DateTime;
+        var latestPost = currentFeed.Items.OrderByDescending(x => x.PublishDate).FirstOrDefault();
+        DateTime pubDate = latestPost.PublishDate.DateTime;
 
     }
 }
