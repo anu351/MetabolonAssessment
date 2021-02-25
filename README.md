@@ -28,11 +28,11 @@ var companyDict = new Dictionary<string, IEnumerable<string>>
  
   Companies that have no activity in the past 2 Days:
 
-  Morbid: A True Crime Podcast
+  Morbid: A True Crime Podcast        
         https://audioboom.com/channels/4997220.rss
 
-  CNN
+  CNN        
         http://rss.cnn.com/rss/money_pf_college.rss
 
-  Crime Junkie
+  Crime Junkie   
         https://feeds.megaphone.fm/ADL9840290619
