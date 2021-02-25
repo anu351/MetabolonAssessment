@@ -44,23 +44,26 @@ namespace Tests
         [TestMethod()]
         public void ActivityTrackerRSSTest()
         {
-            List<string> actualList = new List<string>();
-            List<string> expectedList = new List<string>();
+            Dictionary<string, IEnumerable<string>> actualList = new Dictionary<string, IEnumerable<string>>();
+            Dictionary<string, IEnumerable<string>> expectedList = new Dictionary<string, IEnumerable<string>>();
 
-            expectedList.Add("Morbid: A True Crime Podcast");
-            expectedList.Add("Crime Junkie");
+            expectedList.Add("Morbid: A True Crime Podcast", new List<string> { "https://audioboom.com/channels/4997220.rss" });
+            expectedList.Add("CNN", new List<string> {"http://rss.cnn.com/rss/money_pf_college.rss" });
+            expectedList.Add("Crime Junkie", new List<string> {"https://feeds.megaphone.fm/ADL9840290619" });
 
-            var companyDict = new Dictionary<string, string>
+            var companyDict = new Dictionary<string, IEnumerable<string>>
             {
-                { "Unrivaled: Long Island Serial Killer", "https://rss.acast.com/unraveled" },
-                {"Morbid: A True Crime Podcast", "https://audioboom.com/channels/4997220.rss"},
-                {"CNN", "http://rss.cnn.com/rss/cnn_topstories.rss" },
-                {"Crime Junkie", "https://feeds.megaphone.fm/ADL9840290619" }
+                { "Unrivaled: Long Island Serial Killer", new List<string>{"https://rss.acast.com/unraveled" } },
+                {"Morbid: A True Crime Podcast", new List<string>{"https://audioboom.com/channels/4997220.rss"} },
+                {"CNN", new List<string>{"http://rss.cnn.com/rss/cnn_topstories.rss","http://rss.cnn.com/rss/money_pf_college.rss" } },
+                {"Crime Junkie", new List<string>{"https://feeds.megaphone.fm/ADL9840290619" } },
+                {"CNBC", new List<string>{ "https://www.cnbc.com/id/100003114/device/rss/rss.html","https://www.cnbc.com/id/100370673/device/rss/rss.html", "https://www.cnbc.com/id/10000108/device/rss/rss.html" } },
+
             };
 
-            actualList = rssFeed.ActivityTrackerRSS(companyDict, 2);
+            actualList = rssFeed.ActivityTrackerRSS(companyDict, 2);           
 
-            CollectionAssert.AreEqual(expectedList, actualList);
+            CollectionAssert.AreEqual(expectedList.Keys, actualList.Keys);
             
         }
     }

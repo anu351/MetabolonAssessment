@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Xml;
 using System.ServiceModel.Syndication;
 using System.Linq;
+using System.Collections;
 
 
 public class RSSFeed
@@ -11,26 +12,38 @@ public class RSSFeed
     /// Returns the list of companies that have had no activity for a given number of days.
     /// Number of days is 5 by default if not passed as an argument.
     /// </summary>
-    public List<string> ActivityTrackerRSS(Dictionary<string, string> companyRSSFeed, int numOfDays = 5)
+    public Dictionary<string, IEnumerable<string>> ActivityTrackerRSS(Dictionary<string, IEnumerable<string>> companyRSSFeed, int numOfDays = 5)
     {
-        List<string> inactiveCompanies = new List<string>();
+        Dictionary<string, IEnumerable<string>> inactiveCompanies = new Dictionary<string, IEnumerable<string>>();
         DateTime companypubDate;
         bool companyActivity;
-        foreach (KeyValuePair <string, string> cmpyRSS in companyRSSFeed)
+       
+
+        foreach (KeyValuePair <string, IEnumerable<string>> cmpyRSS in companyRSSFeed)
         {
-            //Get last publish date from company Feed
-            companypubDate = ReadRSSFeed(cmpyRSS.Value);
+            List<string> inactiveCompFeeds = new List<string>();
+            foreach (string feedURL in cmpyRSS.Value)
+            {
+                //Get last publish date from company Feed
+                companypubDate = ReadRSSFeed(feedURL);
 
-            //Check if feed actvity is within activity day range
-            companyActivity = CheckFeedActivity(companypubDate, numOfDays);
+                //Check if feed actvity is within activity day range
+                companyActivity = CheckFeedActivity(companypubDate, numOfDays);
 
-            //If company is Inactive, add it to the return list
-            if (!companyActivity)
+                //If company is Inactive, add it to the return list
+                if (!companyActivity)
                 {
-                    inactiveCompanies.Add(cmpyRSS.Key);
+                    inactiveCompFeeds.Add(feedURL);
+                    
                 }
+            }
+
+            //Add the Feed URLs to the list if inactive
+            if (inactiveCompFeeds.Count > 0)
+                inactiveCompanies.Add(cmpyRSS.Key, inactiveCompFeeds);
+            
         }
-        
+           
         return inactiveCompanies;
     }
 
