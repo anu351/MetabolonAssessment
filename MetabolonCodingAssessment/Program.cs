@@ -17,6 +17,8 @@ namespace MetabolonCodingAssessment
 
             RSSFeed rssFeed = new RSSFeed();
             rssFeed.ReadRSSFeed("https://rss.acast.com/unraveled");
+            DateTime oldDate = new DateTime(2021, 2, 12, 11, 0, 0);
+            rssFeed.CheckFeedActivity(oldDate,5);
         }
     }
 }
