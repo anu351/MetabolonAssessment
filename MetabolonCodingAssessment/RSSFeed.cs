@@ -31,4 +31,22 @@ public class RSSFeed
 
         return pubDate;
     }
+
+    /// <summary>
+    /// Checks if the RSS Feed had posts in the last number of days provided as argument.
+    /// Returns true if the Feed is Active
+    /// </summary>   
+    public bool CheckFeedActivity(DateTime activityDate, int numOfDays)
+    {
+        bool ifActiveFeed;
+        System.TimeSpan dteDiff = DateTime.Now - activityDate;
+        int daysSinceLastPost = dteDiff.Days;            
+
+        if (daysSinceLastPost < numOfDays)
+            ifActiveFeed = true;
+        else
+            ifActiveFeed = false;
+        
+        return ifActiveFeed;
+    }
 }
