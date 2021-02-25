@@ -20,7 +20,7 @@ public class RSSFeed
     /// <summary>
     /// Parse the current companies RSS Feed XML and find the latest publish date
     /// </summary>
-    public void ReadRSSFeed(string currURL)
+    public DateTime ReadRSSFeed(string currURL)
     {
         XmlReader currentXML = XmlReader.Create(currURL);
         SyndicationFeed currentFeed = SyndicationFeed.Load(currentXML);
@@ -29,5 +29,6 @@ public class RSSFeed
         var latestPost = currentFeed.Items.OrderByDescending(x => x.PublishDate).FirstOrDefault();
         DateTime pubDate = latestPost.PublishDate.DateTime;
 
+        return pubDate;
     }
 }
