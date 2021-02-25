@@ -14,6 +14,23 @@ public class RSSFeed
     public List<string> ActivityTrackerRSS(Dictionary<string, string> companyRSSFeed, int numOfDays = 5)
     {
         List<string> inactiveCompanies = new List<string>();
+        DateTime companypubDate;
+        bool companyActivity;
+        foreach (KeyValuePair <string, string> cmpyRSS in companyRSSFeed)
+        {
+            //Get last publish date from company Feed
+            companypubDate = ReadRSSFeed(cmpyRSS.Value);
+
+            //Check if feed actvity is within activity day range
+            companyActivity = CheckFeedActivity(companypubDate, numOfDays);
+
+            //If company is Inactive, add it to the return list
+            if (!companyActivity)
+                {
+                    inactiveCompanies.Add(cmpyRSS.Key);
+                }
+        }
+        
         return inactiveCompanies;
     }
 
